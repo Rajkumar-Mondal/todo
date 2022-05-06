@@ -1,0 +1,87 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+}
+.body {
+  background: linear-gradient(90deg, #00ADB5 ,#000000);
+  height: 100vh;
+  width: 100%;
+}
+.mainbox {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #EEEEEE;
+  height: 70vmin;
+  width: 60vmin;
+  border-radius: 30px;
+  box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.05);
+  text-align: center;
+}
+.mainbox h1 {
+  padding: 5vmin;
+  font-size: 5vmin;
+  font-weight: normal;
+}
+.mainbox h2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(680%, -350%);
+  cursor: pointer;
+  font-size: 4.6vmin;
+}
+.todoinput {
+  width: 50vmin;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.397);
+  background: white;
+  padding: 2vmin 7vmin;
+  font-size: 3vmin;
+}
+.todolist {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 40vmin;
+  margin-top: 2vmin;
+  overflow: auto;
+}
+::-webkit-scrollbar {
+  width: 0;
+}
+.list-items {
+  width: 50vmin;
+  height: 7vmin;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.238);
+  background: linear-gradient(120deg, #ffffff, #afafaf);
+  padding: 2vmin 2vmin;
+  font-size: 3vmin;
+  display: flex;
+  margin-top: 1vmin;
+  position: relative;
+}
+.tododata {
+  padding-right: 1vmin;
+  word-wrap: break-word;
+}
+.editicon{
+  position: absolute;
+  left: 78%;
+  cursor: pointer;
+}
+.deleteicon {
+  position: absolute;
+  left: 90%;
+  cursor: pointer;
+}
+.list-items:hover {
+  background: rgba(0, 0, 0, 0.491);
+  color: white;
+}
