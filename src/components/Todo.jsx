@@ -7,8 +7,8 @@ import Swal from 'sweetalert2'
 const getTodos = () => {
 
     let list = JSON.parse(localStorage.getItem("list"));
-    
-    if(list){
+
+    if (list) {
         return list;
     } else {
         return [];
@@ -62,6 +62,10 @@ const Todo = () => {
         }
     }
 
+    const handleAlldelete = () => {
+        setAddtodo([]);
+    }
+
     useEffect(() => {
         localStorage.setItem("list", JSON.stringify(addtodo));
     }, [addtodo]);
@@ -88,6 +92,7 @@ const Todo = () => {
                             })
                         }
                     </div>
+                    <button onClick={() => handleAlldelete()} >Delete All</button>
                 </div>
             </div>
         </>
